@@ -11,18 +11,42 @@
 | `ALT` | | (Required for adsbexchange-mlat) Altitude of the antenna |
 | `FR24KEY` || (Required for Flightradar24) Sharing Key |
 | `UUID` || (Required for adsbexchange) static uuid |
+| `SITENAME` || (Required for adsbexchange-mlat) Name of the location / or unique username |
+
+## Example .env
+```
+FR24KEY=abcdef12345
+BEASTHOST=127.0.0.1
+MLAT=yes
+LAT=42.07675
+LONG=15.06551
+ALT=19m
+UUID=BD1466D5-269E-48D4-B5B1-463EA8E42BBA
+SITENAME=mynickname_withasuffix
+```
 
 ## Supporting
 - Flightradar 24
-- Adsbexchange
+- Adsbexchange (adsb and mlat)
 
 ## Will be supporting
 - Radarbox
 - Flightaware
 - Planefinder
 
-## Missing?
+## Missing sites?
 please create an issue and I will see what I can do.
+
+## TODO
+- Run without root
+- MultiArch
+
+## Pull Requests
+Yes! Please!
+
+## Check if they are working
+- [Flightradar24](https://www.flightradar24.com/account/data-sharing)
+- [ADS-B Exchange](https://www.adsbexchange.com/myip/)
 
 ## Credits
 Not everything I thought of myself, some of the stuff I got inspired by:
