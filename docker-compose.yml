@@ -4,10 +4,6 @@ services:
     build:
       context: ./fr24
     env_file: mac.env
-    # environment:
-    #   - FR24KEY=xyz
-    #   - BEASTHOST=127.0.0.1
-    #   - MLAT=yes
     ports:
       - 30334:30334
       - 8754:8754
@@ -16,10 +12,11 @@ services:
     build:
       context: ./adsbexchange
     env_file: mac.env
-    # environment:
-    #   - FR24KEY=xyz
-    #   - BEASTHOST=127.0.0.1
-    #   - MLAT=yes
     ports:
       - 8080:8080
-      
+  adsbexchange-mlat:
+    build:
+      context: ./adsbexchange-mlat
+    env_file: mac.env
+    ports:
+      - 8080:8080
