@@ -10,11 +10,6 @@ RUN apt update && \
     git clone https://github.com/wiedehopf/readsb.git /tmp/readsb && \
     cd /tmp/readsb && \
     make
-    # mv /tmp/readsb/readsb /bin/readsb && \
-    # rm -rf /tmp/readsb && \
-    # apt remove -y git gcc zlib1g libncurses-dev && \
-    # apt autoremove -y && \
-    # rm -rf /var/lib/apt/lists/*
 
 FROM ubuntu:focal 
 
