@@ -39,7 +39,7 @@ please create an issue and I will see what I can do.
 
 ## TODO
 - MultiArch
-- Kubernetes/helm charts
+- Kubernetes/helm charts/argocd
 - Running the receiver also in a container
 
 ## Pull Requests
