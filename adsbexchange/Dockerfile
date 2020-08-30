@@ -9,6 +9,8 @@ RUN apt update && \
                                            libncurses-dev && \
     git clone https://github.com/wiedehopf/readsb.git /tmp/readsb && \
     cd /tmp/readsb && \
+    #otherwise it will not run on my good old dell r710s
+    sed -i "s/march=native/mtune=nehalem/g" /tmp/readsb/Makefile && \
     make
 
 FROM ubuntu:focal 
