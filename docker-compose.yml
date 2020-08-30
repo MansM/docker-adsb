@@ -17,6 +17,6 @@ services:
   adsbexchange-mlat:
     build:
       context: ./adsbexchange-mlat
-    env_file: mac.env
+    env_file: .env
     ports:
       - 8080:8080

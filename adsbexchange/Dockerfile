@@ -23,4 +23,7 @@ RUN apt update && \
 COPY start.sh /bin/start.sh
 RUN chmod +x /bin/start.sh
 
+RUN useradd adsb
+USER adsb
+
 ENTRYPOINT /bin/start.sh

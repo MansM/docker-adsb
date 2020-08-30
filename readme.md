@@ -18,8 +18,8 @@
 FR24KEY=abcdef12345
 BEASTHOST=127.0.0.1
 MLAT=yes
-LAT=42.07675
-LONG=15.06551
+LAT=42.12345
+LONG=15.12345
 ALT=19m
 UUID=BD1466D5-269E-48D4-B5B1-463EA8E42BBA
 SITENAME=mynickname_withasuffix
@@ -38,8 +38,9 @@ SITENAME=mynickname_withasuffix
 please create an issue and I will see what I can do.
 
 ## TODO
-- Run without root
 - MultiArch
+- Kubernetes/helm charts
+- Running the receiver also in a container
 
 ## Pull Requests
 Yes! Please!
