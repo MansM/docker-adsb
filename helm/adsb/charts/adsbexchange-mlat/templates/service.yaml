@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "adsbexchange-mlat.fullname" . }}
+  labels:
+    {{- include "adsbexchange-mlat.labels" . | nindent 4 }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - port: {{ .Values.service.port }}
+      targetPort: http
+      protocol: TCP
+      name: http
+  selector:
+    {{- include "adsbexchange-mlat.selectorLabels" . | nindent 4 }}
